@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-logo">A<span>.</span>Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero" style="max-width:100%; padding-left:4rem; padding-right:4rem;">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+
+    <!-- Colonne gauche : Photo -->
+    <div class="hero-photo-col">
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-frame">
+          <!-- Remplacez le src par le chemin de votre photo -->
+          <img src="profil.jpg" alt="Photo de profil"  class="hero-photo-img" />
+        </div>
+        <div class="hero-photo-deco"></div>
+        <div class="hero-photo-badge">
+          <span class="badge-dot"></span>
+          Disponible pour projets
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne droite : Texte -->
+    <div class="hero-text-col">
+      <p class="hero-tag">// Développeur · Designer · Créateur</p>
+      <h1 class="hero-title">
+        RAKOTOARINELINA <br>
+        <span class="line2">Lynoh Fenomanatsoa</span>
+       
+      </h1>
+      <p class="hero-sub">Je conçois et développe des interfaces web modernes, performantes et esthétiquement soignées. Chaque pixel a une intention.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+
+  </div>
+  <span class="hero-scroll">Défiler</span>
+</section>
+
+<!-- About -->
+<section id="about">
+  <p class="section-label reveal">01 — À propos</p>
+  <h2 class="section-title reveal">Qui suis-je<span style="color:var(--accent)">?</span></h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Salut ! Je suis <strong>Lynoh</strong>, développeur web passionné par la création d'interfaces qui combinent <strong>fonctionnalité</strong> et <strong>beauté visuelle</strong>.</p>
+      <p>Je travaille avec les technologies modernes du web pour transformer des idées en produits digitaux concrets. J'aime les défis techniques autant que les détails visuels.</p>
+      <p>Disponible pour des projets <strong>freelance</strong> ou des opportunités à temps plein.</p>
+      <div class="skills-list">
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </div>
+    <div class="about-img reveal">
+      <div class="about-img-box">🧑‍💻</div>
+      <div class="about-img-decoration"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" style="max-width:100%;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label reveal">02 — Projets</p>
+    <h2 class="section-title reveal">Travaux récents</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <p class="project-num">001</p>
+        <h3 class="project-title">E-Commerce App</h3>
+        <p class="project-desc">Plateforme de vente en ligne avec panier, paiements Stripe et tableau de bord admin. Interface moderne et responsive.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Stripe</span>
+        </div>
+        <span class="project-arrow">↗</span>
+      </div>
+
+      <div class="project-card reveal">
+        <p class="project-num">002</p>
+        <h3 class="project-title">Dashboard Analytics</h3>
+        <p class="project-desc">Tableau de bord de visualisation de données en temps réel avec graphiques interactifs et filtres dynamiques.</p>
+        <div class="project-tags">
+          <span class="project-tag">Vue.js</span>
+          <span class="project-tag">D3.js</span>
+          <span class="project-tag">API REST</span>
+        </div>
+        <span class="project-arrow">↗</span>
+      </div>
+
+      <div class="project-card reveal">
+        <p class="project-num">003</p>
+        <h3 class="project-title">App Mobile</h3>
+        <p class="project-desc">Application de gestion de tâches avec synchronisation cloud, notifications push et mode hors ligne.</p>
+        <div class="project-tags">
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Redux</span>
+        </div>
+        <span class="project-arrow">↗</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <p class="section-label reveal">03 — Contact</p>
+  <h2 class="hero-title reveal">Travaillons<br><span class="line2">ensemble.</span></h2>
+  <p style="color:var(--muted); font-size:0.85rem; margin-bottom:2rem;" class="reveal">Vous avez un projet en tête ? Discutons-en.</p>
+  <a href="mailto:votre@email.com" class="contact-email reveal">votre@email.com</a>
+  <div class="social-links reveal">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter</a>
+    <a href="#">Dribbble</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2024 — Votre Nom</span>
+  <span>Conçu & Développé avec ❤️</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
